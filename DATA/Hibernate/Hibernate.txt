@@ -1,0 +1,5 @@
+Composite key in hibernate :
+
+ 1. create a class and define two or more field in it and extend that class with serializable and override equals method and hash code method, and @classId(EmployeeId.class) and add two Id annoatation for both files.(First Approach)
+ 
+ 2.create a class and define two or more field in it and extend that class with serializable and override equals method and hash code method, and add @Embeddable anotation in this new class and define this class in main Employee class.(Second Approach)
