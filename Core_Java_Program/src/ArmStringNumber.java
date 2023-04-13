@@ -4,7 +4,7 @@ public class ArmStringNumber {
 
 	public static void main(String[] args) {
 
-		int num = 151;
+		int num = 153;
 		int orginalNum = num;
 		int sum = 0;
 		int lastDigit = 0;

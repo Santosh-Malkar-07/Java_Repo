@@ -9,8 +9,9 @@ public class PrintNum {
 		// IntStream.range(0, 10).forEach(data -> System.out.println(data));
 		IntStream.rangeClosed(1, 10).forEach(data -> {
 
+			System.out.println(data);
 			if (data % 2 == 0) {
-				System.out.println(data);
+				//System.out.println(data);
 			}
 		});
 	}

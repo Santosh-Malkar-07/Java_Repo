@@ -9,7 +9,7 @@ public class ParallelArraySort {
 //		Arrays.sort(arrs);
 
 //		Arrays.parallelSort(arrs);
-//		Arrays.parallelSort(arrs, 0, 4);
+		Arrays.parallelSort(arrs, 0, 4);
 
 		for (int arr : arrs) {
 			System.out.println(arr);

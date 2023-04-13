@@ -1,0 +1,18 @@
+Time Sheet :
+ https://tz.mis.amdocs.com/weekly-report
+
+
+
+
+----------------------------------------------------
+Zipkin Server :
+java -jar zipkin-server-2.24.0-exec.jar
+
+200  = get request data successfull.
+201  = post request data successfull.
+202  = Accepted	The request has been accepted for processing, but the processing has not been completed
+404  = request not found.
+400  = the resource exist but input is wrong.
+401  = Unauthorized is the status code to return when the client provides no credentials or invalid credentials.
+403  = Forbidden is the status code to return when a client has valid credentials but not enough privileges to perform an action on a resource.
+402  = The goal of the 402 status code is to help deal with payment issues that might arise in the future when users use microtransactions or digital cash payments through their browsers
