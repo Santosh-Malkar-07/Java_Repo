@@ -15,11 +15,24 @@ class SingletonTest {
 //		return singletonTest;
 //	}
 
-	public static synchronized SingletonTest getSinglton() {
+//	public static synchronized SingletonTest getSinglton() {
+//
+//		if (singletonTest == null) {
+//			synchronized (SingletonTest.class) {
+//				singletonTest = new SingletonTest();
+//			}
+//		}
+//		return singletonTest;
+//	}
+
+	/* Double lock Checking in singletone design pattern. */
+	public static SingletonTest getSinglton() {
 
 		if (singletonTest == null) {
 			synchronized (SingletonTest.class) {
-				singletonTest = new SingletonTest();
+				if (singletonTest == null) {
+					singletonTest = new SingletonTest();
+				}
 			}
 		}
 		return singletonTest;

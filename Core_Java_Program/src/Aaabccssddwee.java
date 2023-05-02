@@ -1,5 +1,5 @@
 
-/* consicative repeted element */
+/* Consecutive repeated element */
 public class Aaabccssddwee {
 	public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ public class Aaabccssddwee {
 		for (int i = 0; i < ch.length; i++) {
 			isduplicate = false;
 			count = 1;
-			if (ch[i] == 'Y') {
+			if (repetated[i] == 'Y') {
 				continue;
 			}
 			for (int j = i + 1; j < ch.length; j++) {

@@ -3,7 +3,7 @@ public class DecimalToBinary {
 
 	public void decimalToBinary(int x) {
 
-		int s = 0;
+		int s = 0; //1234
 
 		int data = 0;
 		int i = 1;

@@ -35,8 +35,8 @@ public class OccuranceOfEachElementInArray {
 //		}
 
 		Arrays.stream(str).distinct().forEach(data -> {
-			System.out.println(data + "    occurence   " + Arrays.stream(str).filter(data1 -> data1.equals(data)).count()
-					+ "    Timesss ");
+			System.out.println(data + "    occurence   "
+					+ Arrays.stream(str).filter(data1 -> data1.equals(data)).count() + "    Timesss ");
 		});
 
 	}

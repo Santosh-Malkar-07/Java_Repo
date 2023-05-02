@@ -1,6 +1,10 @@
 package com.custom.immutable;
 
-/*Immutable class benefits is we are getting thread safety. Object creation is costly so we can reuse this object for every same requirement. We can use Immutable class object in HashMap of key. */
+/**
+ * Immutable class benefits is we are getting thread safety. Object creation is
+ * costly so we can reuse this object for every same requirement. We can use
+ * Immutable class object in HashMap of key.
+ */
 final class Student {
 	final int rollNo;
 	final String name;
@@ -20,13 +24,13 @@ final class Student {
 		return name;
 	}
 
-	/* This not recommended way, Singleton pattern will break. */
+	/* This not recommended way, immutable pattern will break. */
 //	public Address getAddress() {
 //		return address;
 //	}
 
 	/*
-	 * This will not break Singleton pattern, we are returning clone object not
+	 * This will not break immutable pattern, we are returning clone object not
 	 * original object like above code. Not good programming.
 	 */
 //	public Address getAddress() {

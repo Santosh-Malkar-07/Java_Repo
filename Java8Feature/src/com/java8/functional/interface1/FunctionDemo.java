@@ -21,7 +21,7 @@ public class FunctionDemo {
 		System.out.println(strLength.apply("Santosh"));
 
 		/* Consumer Demo. */
-		Consumer<Integer> display = a -> System.out.println(a);
+		Consumer<Integer> display = (a) -> System.out.println(a);
 		display.accept(10);
 
 		Supplier<Double> randomValue = () -> Math.random();

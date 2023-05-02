@@ -64,8 +64,8 @@ public class EmployeeMaxSalary {
 		empList.add(new Employee(10, "Balu", 100));
 		empList.add(new Employee(111, "Tan", 3503300));
 		empList.add(new Employee(109, "Balu", 35000));
-		empList.add(new Employee(100, "Santosg", 20000));
-		empList.add(new Employee(102, "Nitin", 222));
+		empList.add(new Employee(130, "Santosg", 20000));
+		empList.add(new Employee(103, "Nitin", 222));
 
 		/* Finding minimum and Maximum salary of employee. */
 		Comparator<Employee> compareMethod = (ob1, ob2) -> {
@@ -136,15 +136,23 @@ public class EmployeeMaxSalary {
 		// System.out.println(data3);
 
 		/*
-		 * Program to convert list of employee to Map,  key should be Employee ID value average
-		 * Salary.
+		 * Program to convert list of employee to Map, key should be Employee ID value
+		 * average Salary.
 		 */
 		Map<Object, Double> resultmap = empList.stream().collect(Collectors.groupingBy(empdata -> empdata.getEmpId(),
 				Collectors.averagingDouble(dataAvg -> dataAvg.getEmpSal())));
 
 		resultmap.forEach((keydata, valData) -> {
-			System.out.println(keydata + "   " + valData);
+			// System.out.println(keydata + " " + valData);
 		});
+
+		/*
+		 * Program to convert list of employee to Map, key should be Employee ID and
+		 * value Salary.
+		 */
+		Map<Integer, String> empListTomap = empList.stream()
+				.collect(Collectors.toMap(Employee::getEmpId, Employee::getEmpName));
+		System.out.println(empListTomap);
 
 	}
 

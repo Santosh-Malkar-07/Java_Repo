@@ -31,6 +31,7 @@ class Conversion {
 
 		String[] strArr = new String[] { "Hema", "Rani", "Neha", "Riya", "Pillu" };
 		List<String> listStr = Arrays.asList(strArr);
+		List<String> listStr1 = Arrays.asList("Hema", "Rani", "Neha", "Riya", "Pillu" );
 
 		for (String str : listStr) {
 			System.out.println(str);

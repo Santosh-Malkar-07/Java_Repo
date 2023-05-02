@@ -1,14 +1,8 @@
-Time Sheet :
- https://tz.mis.amdocs.com/weekly-report
 
-
-
-
-----------------------------------------------------
 Zipkin Server :
 java -jar zipkin-server-2.24.0-exec.jar
 
-200  = get request data successfull.
+200  = Get or Delete(200, 202 successfull delete) or update(200, 204 successfull update) request data successfull.
 201  = post request data successfull.
 202  = Accepted	The request has been accepted for processing, but the processing has not been completed
 404  = request not found.

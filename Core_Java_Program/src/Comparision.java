@@ -1,4 +1,4 @@
-package com.starPattern.program;
+
 
 //Byte Always
 //Short -128 To 127

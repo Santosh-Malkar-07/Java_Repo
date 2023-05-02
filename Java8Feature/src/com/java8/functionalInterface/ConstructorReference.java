@@ -4,8 +4,8 @@ interface ConstructorInterf {
 	public void constRef(String name);
 }
 
-class constructorRefTest {
-	constructorRefTest(String name) {
+class ConstructorRefTest {
+	ConstructorRefTest(String name) {
 		System.out.println("welcome : " + name);
 	}
 }
@@ -13,7 +13,7 @@ class constructorRefTest {
 public class ConstructorReference {
 
 	public static void main(String[] args) {
-		ConstructorInterf constructorInterf = constructorRefTest::new;
+		ConstructorInterf constructorInterf = ConstructorRefTest::new;
 		constructorInterf.constRef("Santosh");
 
 	}
