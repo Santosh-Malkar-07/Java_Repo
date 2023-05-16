@@ -5,17 +5,17 @@ class TestTryCatch {
 		try {
 
 			System.out.println("Try Block");
-
-			int result = 10 / 0;
 			// System.exit(0);
-			// return;
+			//int result = 10 / 0;
+			
+			 return;
 		} catch (Exception e) {
 
 			System.out.println("Catch Block");
 			// return;
 		} finally {
 			System.out.println("Final Block");
-			return;
+		//	return;
 		}
 	}
 }

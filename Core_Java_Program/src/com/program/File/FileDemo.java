@@ -1,4 +1,4 @@
-package com.starPattern.program.File;
+package com.program.File;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -10,8 +10,8 @@ public class Comparision {
 
 	public static void main(String[] args) {
 
-		Integer a = 127;
-		Integer b = 127;
+		Float a = 127f;
+		Float b = 127f;
 
 		if (a == b) {
 			System.out.println("Success");

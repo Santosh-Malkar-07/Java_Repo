@@ -25,7 +25,7 @@ class SingletonTest {
 //		return singletonTest;
 //	}
 
-	/* Double lock Checking in singletone design pattern. */
+	/* Double lock Checking in Singleton design pattern. */
 	public static SingletonTest getSinglton() {
 
 		if (singletonTest == null) {

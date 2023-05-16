@@ -2,8 +2,7 @@ package com.custom.immutable;
 
 /**
  * Immutable class benefits is we are getting thread safety. Object creation is
- * costly so we can reuse this object for every same requirement. We can use
- * Immutable class object in HashMap of key.
+ * costly so we can reuse this object for every same requirement.
  */
 final class Student {
 	final int rollNo;
