@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernatedb</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<!-- For xml base. -->
+		<!-- <mapping resource="employee.hbm.xml" /> -->
+
+		<!-- For Annotation base. -->
+		<!-- <mapping class="com.hibernate.app.first.annotation.Employee" /> -->
+
+
+		<!-- Table per hierarchy Inheritance mapping. -->
+		<!-- <mapping class="com.hibernate.app.inheritancemapping.tableperhierarchy.Employee1" 
+			/> <mapping class="com.hibernate.app.inheritancemapping.tableperhierarchy.Regular_Employee1" 
+			/> <mapping class="com.hibernate.app.inheritancemapping.tableperhierarchy.Contract_Employee1" 
+			/> -->
+
+
+		<!-- Table per Concrete Inheritance mapping. -->
+		<!-- <mapping class="com.hibernate.app.inheritancemapping.tableperconcentricclass.Employee2" 
+			/> <mapping class="com.hibernate.app.inheritancemapping.tableperconcentricclass.Regular_Employee2" 
+			/> <mapping class="com.hibernate.app.inheritancemapping.tableperconcentricclass.Contract_Employee2" 
+			/> -->
+
+
+		<!-- Table Per Sub class Inheritance mapping. -->
+		<!-- <mapping class="com.hibernate.app.inheritancemapping.tablepersubclass.Employee3" 
+			/> <mapping class="com.hibernate.app.inheritancemapping.tablepersubclass.Regular_Employee3" 
+			/> <mapping class="com.hibernate.app.inheritancemapping.tablepersubclass.Contract_Employee3" 
+			/> -->
+
+		<!-- One to Many mapping. -->
+		<!-- <mapping class="com.hibernate.app.onetomany.Question" /> <mapping 
+			class="com.hibernate.app.onetomany.Answer" /> -->
+
+		<!-- May to Many mapping. -->
+		<!-- <mapping class="com.hibernate.app.manytomany.Question1" /> <mapping 
+			class="com.hibernate.app.manytomany.Answer1" /> -->
+
+		<!-- One To One Mapping. -->
+		<mapping class="com.hibernate.app.onetoone.Employee" />
+		<mapping class="com.hibernate.app.onetoone.Address" />
+
+	</session-factory>
+
+</hibernate-configuration> 

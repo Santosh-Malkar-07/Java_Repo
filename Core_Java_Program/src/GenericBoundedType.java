@@ -58,8 +58,8 @@ public class GenericBoundedType {
 
 	public static void main(String[] args) {
 
-		Test<Integer> test = new Test<Integer>();
-		Test<Double> test1 = new Test<Double>();
+//		TestTest<Integer> test = new TestTest<Integer>();
+//		TestTest<Double> test1 = new TestTest<Double>();
 		// Test<String> test2 = new Test<String>(); CE.
 	}
 

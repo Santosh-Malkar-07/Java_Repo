@@ -17,13 +17,13 @@ public class FirstRepetatedString {
 				.collect(Collectors.groupingBy(data -> data, LinkedHashMap::new, Collectors.counting()));
 
 		for (Map.Entry<Object, Long> result1 : result.entrySet()) {
-			if (result1.getValue() == 1) {
+			if (result1.getValue() == 2) {
 			//	System.out.println(result1.getKey());
 				break;
 			}
 		}
 
-		Optional<Object> resdata = result.entrySet().stream().filter(data1 -> data1.getValue() == 1)
+		Optional<Object> resdata = result.entrySet().stream().filter(data1 -> data1.getValue() == 2)
 				.map(data -> data.getKey()).findFirst();
 
 		if (resdata.isPresent()) {

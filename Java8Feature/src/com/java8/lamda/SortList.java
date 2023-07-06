@@ -29,6 +29,7 @@ public class SortList {
 			}
 		};
 
+//		Collections.sort(list);
 //		Collections.sort(list, Collections.reverseOrder());
 
 //		Comparator<Integer> sorterdData = (p1, p2) -> {
